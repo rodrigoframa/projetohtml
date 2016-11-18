@@ -1,0 +1,254 @@
+
+/* estilo da classe botão */
+.button {
+    border: 0;
+    color: white;
+    background-color: #13a9ba;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9em;
+    text-decoration: none;    
+}
+/* body */
+body {
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+}
+/* cabeçalhos h1,h2,h3 */ 
+h1, h2, h3 {
+    margin: 0;
+    font-family: "Roboto Slab", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+}
+/* todos os elementos */ 
+* {
+    box-sizing: border-box;
+}
+/* todos os section com atributo id*/ 
+section[id] {
+    padding-top: 58px;
+}
+/* painel de navegação */
+nav {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #333;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: Pacifico, serif;
+    margin-bottom: 8px;
+}
+/* menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;    
+}
+/* listas do menu */
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+/* ancordas das listas do menu */
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+/* cabeçalho */
+header {
+    background-image: url("http://i.imgur.com/lxiJa87.jpg%22");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;    
+}
+/* paragrafos do cabeçalho */
+header p {
+    margin-bottom: 2em;
+}
+/* classe sobre */
+.sobre {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #13a9ba;
+    color: white;
+    padding-bottom: 58px;
+}
+/* pagrafos da classe sobre */
+.sobre p {
+    margin-bottom: 2em;
+    max-width: 1000px;
+}
+/* todos classe button dentro da classe sobre */
+.sobre .button {
+    background-color: white;
+    color: #333;
+}
+/* classe serviços */
+.servicos {
+    display: flex;
+    flex-flow: column;
+    align-items: center;   
+}
+
+.servicos .servico {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.servicos .servico h3 {
+    margin-top: 10px;
+}
+
+.servicos .servico img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.portfolio {
+    display: flex;
+    flex-flow: column;
+    align-items: center;    
+}
+
+.portfolio h2 {
+    margin-bottom: 20px;
+}
+
+.portfolio img {
+    width: 40%;
+}
+
+.contato {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contato a {
+    display: block;
+    color: inherit;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    margin-bottom: 30px; 
+}
+
+input, select, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.icone-contato:last-child {
+    margin-top: 10px;
+    
+}
+
+/* rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #13a9ba;
+    color: white;
+    margin-top: 58px;    
+}
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    nav {
+        flex-flow: row;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        justify-content: space-around;
+        background-color: rgba(0,0,0,0.8);
+        padding: 5px;
+    }
+    
+    nav ul {
+        flex-flow: row;
+        width: 50%;        
+    }
+    
+    header {
+        height: 100vh;
+        justify-content: center;        
+    }
+    
+    .sobre {
+        justify-content: center;        
+    }
+    
+    .servicos {
+        flex-flow: row wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;        
+    }
+    
+    .servicos h2 {
+        text-align: center;
+        width: 100%;
+    }
+    .servicos .servico {
+        flex: 1 1 150px;
+        padding: 0 10px;
+    }
+    
+    .portfolio{
+        flex-flow: row wrap;        
+    }
+    
+    .portfolio h2 {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .portfolio img {
+        width: 33.3333333%;
+    }
+    
+    .contato {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;        
+    }
+    
+    .contato h2 {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .icone-contato:last-child {
+        margin-top: 0;
+    }
+}
